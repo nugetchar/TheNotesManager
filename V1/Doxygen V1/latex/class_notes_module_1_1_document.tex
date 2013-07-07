@@ -1,0 +1,198 @@
+\hypertarget{class_notes_module_1_1_document}{\section{Notes\-Module\-:\-:Document Class Reference}
+\label{class_notes_module_1_1_document}\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}}
+}
+
+
+The \hyperlink{class_notes_module_1_1_document}{Document} class.  
+
+
+
+
+{\ttfamily \#include $<$Notes\-Module.\-h$>$}
+
+Inheritance diagram for Notes\-Module\-:\-:Document\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_notes_module_1_1_document}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_notes_module_1_1_document_1_1_const_iterator}{Const\-Iterator}
+\item 
+class \hyperlink{class_notes_module_1_1_document_1_1_iterator}{Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_notes_module_1_1_document_acaa187ab49207967fde7907bc0e60dcd}{Document} (const Q\-String \&f=0, const Q\-String \&t=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_notes_module_1_1_document}{Document}. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_notes_module_1_1_document_aa3d4e2d5c1a2de0deed5397ac968f60c}{get\-Nb\-Notes} () const 
+\begin{DoxyCompactList}\small\item\em get\-Nb\-Notes \end{DoxyCompactList}\item 
+\hyperlink{class_notes_module_1_1_document}{Document} \& \hyperlink{class_notes_module_1_1_document_a996e1073763a5aecfc084b1b9d5a3c59}{operator$<$$<$} (\hyperlink{class_notes_module_1_1_note}{Note} \&)
+\item 
+void \hyperlink{class_notes_module_1_1_document_ae4cd1acd1409d6104b431d0651de4f63}{remove\-Note} (\hyperlink{class_notes_module_1_1_note}{Note} \&)
+\item 
+\hyperlink{class_notes_module_1_1_document_1_1_iterator}{Iterator} \hyperlink{class_notes_module_1_1_document_a2c7f6c0800e1f38024e25488b1e2279a}{get\-Iterator} ()
+\item 
+\hyperlink{class_notes_module_1_1_document_1_1_const_iterator}{Const\-Iterator} \hyperlink{class_notes_module_1_1_document_a77bcd875ad588922cdfcceff5424b270}{get\-Const\-Iterator} () const 
+\item 
+void \hyperlink{class_notes_module_1_1_document_ad0fea07bbaefaa72aec840f6a2810575}{load} ()
+\item 
+void \hyperlink{class_notes_module_1_1_document_a0d0b52257a143ee3d326c85ec18e120a}{save} ()
+\item 
+Q\-String \hyperlink{class_notes_module_1_1_document_a81a379f903469fc3e8aa3435647010e2}{get\-Type} () const 
+\item 
+void \hyperlink{class_notes_module_1_1_document_a1c25f6e58024fa1827044e830b523b7b}{exporter} (const Q\-String \&path\-\_\-export, \hyperlink{_t_y_p_e_s___e_x_p_o_r_t_8h_a25a17d8584d83ab977791df2476e006c}{T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T} type\-\_\-export) const 
+\item 
+void \hyperlink{class_notes_module_1_1_document_ae73c3ee1513e494bd16bf4b403b50654}{export\-As\-Part} (Q\-Text\-Stream \&out, \hyperlink{_t_y_p_e_s___e_x_p_o_r_t_8h_a25a17d8584d83ab977791df2476e006c}{T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T} type\-\_\-export, unsigned int title\-Level) const 
+\item 
+void \hyperlink{class_notes_module_1_1_document_af99261b1cf3e0e36e0bf61b931dae7c7}{rewrite\-\_\-in\-\_\-trash} (Q\-Text\-Stream \&out) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_notes_module_1_1_document}{Document} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_notes_module_1_1_document_acaa187ab49207967fde7907bc0e60dcd}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!Document@{Document}}
+\index{Document@{Document}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{Document}]{\setlength{\rightskip}{0pt plus 5cm}Notes\-Module\-::\-Document\-::\-Document (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{f = {\ttfamily 0}, }
+\item[{const Q\-String \&}]{t = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_notes_module_1_1_document_acaa187ab49207967fde7907bc0e60dcd}
+
+
+\hyperlink{class_notes_module_1_1_document}{Document}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the filename (I\-D) \\
+\hline
+{\em t} & the title \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_notes_module_1_1_document_ae73c3ee1513e494bd16bf4b403b50654}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!export\-As\-Part@{export\-As\-Part}}
+\index{export\-As\-Part@{export\-As\-Part}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{export\-As\-Part}]{\setlength{\rightskip}{0pt plus 5cm}void Document\-::export\-As\-Part (
+\begin{DoxyParamCaption}
+\item[{Q\-Text\-Stream \&}]{out, }
+\item[{{\bf T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T}}]{type\-\_\-export, }
+\item[{unsigned int}]{title\-Level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_document_ae73c3ee1513e494bd16bf4b403b50654}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_a71320195744f761430f9efe356c8e55d}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_document_a1c25f6e58024fa1827044e830b523b7b}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!exporter@{exporter}}
+\index{exporter@{exporter}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{exporter}]{\setlength{\rightskip}{0pt plus 5cm}void Document\-::exporter (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{path\-\_\-export, }
+\item[{{\bf T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T}}]{type\-\_\-export}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_document_a1c25f6e58024fa1827044e830b523b7b}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_a6b14ab7f7fc1bb12ead4f8c0ba14a1f7}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_document_a77bcd875ad588922cdfcceff5424b270}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!get\-Const\-Iterator@{get\-Const\-Iterator}}
+\index{get\-Const\-Iterator@{get\-Const\-Iterator}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{get\-Const\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Const\-Iterator} Notes\-Module\-::\-Document\-::get\-Const\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_notes_module_1_1_document_a77bcd875ad588922cdfcceff5424b270}
+\hypertarget{class_notes_module_1_1_document_a2c7f6c0800e1f38024e25488b1e2279a}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!get\-Iterator@{get\-Iterator}}
+\index{get\-Iterator@{get\-Iterator}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{get\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iterator} Notes\-Module\-::\-Document\-::get\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_notes_module_1_1_document_a2c7f6c0800e1f38024e25488b1e2279a}
+\hypertarget{class_notes_module_1_1_document_aa3d4e2d5c1a2de0deed5397ac968f60c}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!get\-Nb\-Notes@{get\-Nb\-Notes}}
+\index{get\-Nb\-Notes@{get\-Nb\-Notes}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{get\-Nb\-Notes}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Notes\-Module\-::\-Document\-::get\-Nb\-Notes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_notes_module_1_1_document_aa3d4e2d5c1a2de0deed5397ac968f60c}
+
+
+get\-Nb\-Notes 
+
+\begin{DoxyReturn}{Returns}
+the number of Notes 
+\end{DoxyReturn}
+\hypertarget{class_notes_module_1_1_document_a81a379f903469fc3e8aa3435647010e2}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Document\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_document_a81a379f903469fc3e8aa3435647010e2}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_aabb430fe24e65eda49993d1340583489}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_document_ad0fea07bbaefaa72aec840f6a2810575}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!load@{load}}
+\index{load@{load}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Document\-::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_document_ad0fea07bbaefaa72aec840f6a2810575}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_ad1b766b75cc0c201cab42ca0ee175efb}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_document_a996e1073763a5aecfc084b1b9d5a3c59}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Document} \& Document\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Note} \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_notes_module_1_1_document_a996e1073763a5aecfc084b1b9d5a3c59}
+\hypertarget{class_notes_module_1_1_document_ae4cd1acd1409d6104b431d0651de4f63}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!remove\-Note@{remove\-Note}}
+\index{remove\-Note@{remove\-Note}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{remove\-Note}]{\setlength{\rightskip}{0pt plus 5cm}void Document\-::remove\-Note (
+\begin{DoxyParamCaption}
+\item[{{\bf Note} \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_notes_module_1_1_document_ae4cd1acd1409d6104b431d0651de4f63}
+\hypertarget{class_notes_module_1_1_document_af99261b1cf3e0e36e0bf61b931dae7c7}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!rewrite\-\_\-in\-\_\-trash@{rewrite\-\_\-in\-\_\-trash}}
+\index{rewrite\-\_\-in\-\_\-trash@{rewrite\-\_\-in\-\_\-trash}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{rewrite\-\_\-in\-\_\-trash}]{\setlength{\rightskip}{0pt plus 5cm}void Document\-::rewrite\-\_\-in\-\_\-trash (
+\begin{DoxyParamCaption}
+\item[{Q\-Text\-Stream \&}]{out}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_document_af99261b1cf3e0e36e0bf61b931dae7c7}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_a6ec4ccea385dd368fb7c50f52de470d7}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_document_a0d0b52257a143ee3d326c85ec18e120a}{\index{Notes\-Module\-::\-Document@{Notes\-Module\-::\-Document}!save@{save}}
+\index{save@{save}!NotesModule::Document@{Notes\-Module\-::\-Document}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Document\-::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_document_a0d0b52257a143ee3d326c85ec18e120a}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_aafaae92e7b543c5936dccc9b3f05bac0}{Notes\-Module\-::\-Note}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_notes_module_8h}{Notes\-Module.\-h}\item 
+\hyperlink{_notes_module_8cpp}{Notes\-Module.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,530 @@
+\hypertarget{classworkspace_1_1_workspace}{\section{workspace\-:\-:Workspace Class Reference}
+\label{classworkspace_1_1_workspace}\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}}
+}
+
+
+The \hyperlink{classworkspace_1_1_workspace}{Workspace} class\-: singleton permettant de gérer de manière centralisée les managers et la poubelle. C'est le contrôleur de l'application;.  
+
+
+
+
+{\ttfamily \#include $<$Workspace.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_notes_module_1_1_note}{Notes\-Module\-::\-Note} $\ast$ \hyperlink{classworkspace_1_1_workspace_a555e62e540d13653a9a6680e93b44cd8}{create\-\_\-note} (const Q\-String \&type, const Q\-String \&id=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em create\-\_\-note\-: créer une note, stockée directement dans le Notes\-Manager \end{DoxyCompactList}\item 
+\hyperlink{class_notes_module_1_1_note}{Notes\-Module\-::\-Note} $\ast$ \hyperlink{classworkspace_1_1_workspace_a64568fb22aa97ab7874cf8dba0a26ee0}{edit\-\_\-note} (const Q\-String \&id) const 
+\begin{DoxyCompactList}\small\item\em edit\-\_\-note\-: récupérer une note pour l'éditer \end{DoxyCompactList}\item 
+\hyperlink{class_notes_module_1_1_note}{Notes\-Module\-::\-Note} $\ast$ \hyperlink{classworkspace_1_1_workspace_a2e4fdc7d825069cfcec38dc5dc3060b4}{operator\mbox{[}$\,$\mbox{]}} (const Q\-String \&path) const 
+\begin{DoxyCompactList}\small\item\em operator \mbox{[}\mbox{]} \end{DoxyCompactList}\item 
+Q\-String \hyperlink{classworkspace_1_1_workspace_a1a66b35b3c44dba8f729814ff8af4328}{get\-\_\-path} () const 
+\begin{DoxyCompactList}\small\item\em get\-\_\-path \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_aa87dbe4a01822696c551bf56d9912f0e}{save\-\_\-note} (const Q\-String \&, const Q\-String \&)
+\begin{DoxyCompactList}\small\item\em save\-\_\-note \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_ae69a9277bdff9c37fa8cfe440f8a4c30}{delete\-\_\-note} (const Q\-String \&)
+\begin{DoxyCompactList}\small\item\em delete\-\_\-note \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_a18b85cb58ef636b9cf199267ba1a0b50}{undo\-\_\-delete\-\_\-note} (const Q\-String \&)
+\begin{DoxyCompactList}\small\item\em undo\-\_\-delete\-\_\-note \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_a2e81bd3729b705d67086c394df7901ef}{export\-\_\-note} (const Q\-String \&, const Q\-String \&, const Q\-String \&path\-\_\-export) const 
+\begin{DoxyCompactList}\small\item\em export\-\_\-note \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_a191c786701c0bcfcb216f7a1f06d3df4}{save\-\_\-tag} (const Q\-String \&)
+\begin{DoxyCompactList}\small\item\em save\-\_\-tag \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_ac02f8eec10bd9dcbbad3a1e586f7ae1d}{delete\-\_\-tag} (const Q\-String \&)
+\begin{DoxyCompactList}\small\item\em delete\-\_\-tag \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_ab99fabc94aa0065443e72ea252969927}{bind\-\_\-note} (const Q\-String \&id, const Q\-String \&tag)
+\begin{DoxyCompactList}\small\item\em bind\-\_\-note\-: liér une note à un tag \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_a5ea330230fea932aa4de1aa3aea5bcc7}{unbind\-\_\-note} (const Q\-String \&id, const Q\-String \&tag)
+\begin{DoxyCompactList}\small\item\em unbind\-\_\-note\-: enlever le lien entre une note et un tag \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_a6716ce0aa8484fcb6ab5be51a2ac2acc}{save} ()
+\begin{DoxyCompactList}\small\item\em save\-: sauvegarder le \hyperlink{classworkspace_1_1_workspace}{Workspace} \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_af3d7148dc6d3a11887196d24fa078fcb}{load} ()
+\begin{DoxyCompactList}\small\item\em load\-: charger le \hyperlink{classworkspace_1_1_workspace}{Workspace} \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_a23bf5733ad13d7d6579ab993061c5d4f}{empty\-\_\-trash} ()
+\begin{DoxyCompactList}\small\item\em empty\-\_\-trash\-: vider la corbeille \end{DoxyCompactList}\item 
+bool \hyperlink{classworkspace_1_1_workspace_adab6c7f1f9c5352db90ec020da70ae11}{already\-\_\-a\-\_\-workspace} (const Q\-String \&new\-\_\-path) const 
+\begin{DoxyCompactList}\small\item\em already\-\_\-a\-\_\-workspace\-: vérifie si le dossier référencé par le path est déjà un workspace \end{DoxyCompactList}\item 
+bool \hyperlink{classworkspace_1_1_workspace_a2d7689e3fece579fd9ec86f596b0b60e}{donner\-\_\-20\-\_\-au\-\_\-projet} ()
+\begin{DoxyCompactList}\small\item\em donner\-\_\-20\-\_\-au\-\_\-projet\-: donne 20 au projet \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_a03cc0063af4233671529564ae2bdf8e8}{erase\-\_\-file\-\_\-of\-\_\-tags} () const 
+\begin{DoxyCompactList}\small\item\em erase\-\_\-file\-\_\-of\-\_\-tags\-: supprimer le fichier de tags \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_a0ede1d8365f03440a98734a511fb64de}{erase\-\_\-file\-\_\-of\-\_\-notes} () const 
+\begin{DoxyCompactList}\small\item\em erase\-\_\-file\-\_\-of\-\_\-notes\-: supprimer le fichier de notes \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_aa183b1533e93538bca6c2fbedb82433b}{erase\-\_\-file\-\_\-of\-\_\-trash} () const 
+\begin{DoxyCompactList}\small\item\em erase\-\_\-file\-\_\-of\-\_\-trash\-: supprimer le fichier de la corbeille \end{DoxyCompactList}\item 
+void \hyperlink{classworkspace_1_1_workspace_a60ae23039c19c001adccecde4bec32e4}{do\-\_\-a\-\_\-backup} () const 
+\begin{DoxyCompactList}\small\item\em do\-\_\-a\-\_\-backup\-: fait un backup du \hyperlink{classworkspace_1_1_workspace}{Workspace} \end{DoxyCompactList}\item 
+Q\-Set$<$ \hyperlink{class_notes_module_1_1_note}{Notes\-Module\-::\-Note} $\ast$ $>$ \hyperlink{classworkspace_1_1_workspace_a215d03715ce946b346b4b6bb3280fbe9}{get\-\_\-notes\-\_\-by\-\_\-type} (const Q\-String \&type)
+\begin{DoxyCompactList}\small\item\em get\-\_\-notes\-\_\-by\-\_\-type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classworkspace_1_1_workspace}{Workspace} $\ast$ \hyperlink{classworkspace_1_1_workspace_adaf682c34c80a66ed9bd83aac81ea789}{release\-The\-Workspace} (const Q\-String \&path)
+\begin{DoxyCompactList}\small\item\em release\-The\-Workspace\-: initialiser une première fois le \hyperlink{classworkspace_1_1_workspace}{Workspace} \end{DoxyCompactList}\item 
+static void \hyperlink{classworkspace_1_1_workspace_ad59c05ecb96bfec71e16f95466c4cbf0}{kill\-The\-Workspace} ()
+\begin{DoxyCompactList}\small\item\em kill\-The\-Workspace\-: désallouer de la mémoire l'unique instance \end{DoxyCompactList}\item 
+static \hyperlink{classworkspace_1_1_workspace}{Workspace} $\ast$ \hyperlink{classworkspace_1_1_workspace_aa0d07ec34d96ad27dfa3f50dc4fe4c5d}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em get\-Instance \end{DoxyCompactList}\item 
+static void \hyperlink{classworkspace_1_1_workspace_ad0a54e4a704366d1ff8f2c57b8fcec91}{reset} ()
+\begin{DoxyCompactList}\small\item\em reset\-: effectuer une remise à 0 du \hyperlink{classworkspace_1_1_workspace}{Workspace} \end{DoxyCompactList}\item 
+static void \hyperlink{classworkspace_1_1_workspace_ae72600ffb0160998e06517327f8d2296}{copy\-\_\-paste} (const Q\-String \&new\-\_\-path)
+\begin{DoxyCompactList}\small\item\em copy\-\_\-paste\-: copier/coller le \hyperlink{classworkspace_1_1_workspace}{Workspace} dans un nouvel emplacement \end{DoxyCompactList}\item 
+static void \hyperlink{classworkspace_1_1_workspace_a9caa89c12cb648dd78b36f0652fa75e3}{change\-\_\-workspace} (const Q\-String \&new\-\_\-path)
+\begin{DoxyCompactList}\small\item\em change\-\_\-workspace\-: faire référencer le \hyperlink{classworkspace_1_1_workspace}{Workspace} autre part sur le disque \end{DoxyCompactList}\item 
+static Q\-String \hyperlink{classworkspace_1_1_workspace_aef089d995061202833136a2d1a55d7ce}{slash\-\_\-to\-\_\-back\-\_\-slash} (const Q\-String \&path)
+\begin{DoxyCompactList}\small\item\em slash\-\_\-to\-\_\-back\-\_\-slash \end{DoxyCompactList}\item 
+static Q\-String \hyperlink{classworkspace_1_1_workspace_aa107ed5e1e89e55d3fca11d426f409e4}{back\-\_\-slash\-\_\-to\-\_\-slash} (const Q\-String \&path)
+\begin{DoxyCompactList}\small\item\em back\-\_\-slash\-\_\-to\-\_\-slash \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classworkspace_1_1_workspace}{Workspace} class\-: singleton permettant de gérer de manière centralisée les managers et la poubelle. C'est le contrôleur de l'application;. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classworkspace_1_1_workspace_adab6c7f1f9c5352db90ec020da70ae11}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!already\-\_\-a\-\_\-workspace@{already\-\_\-a\-\_\-workspace}}
+\index{already\-\_\-a\-\_\-workspace@{already\-\_\-a\-\_\-workspace}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{already\-\_\-a\-\_\-workspace}]{\setlength{\rightskip}{0pt plus 5cm}bool Workspace\-::already\-\_\-a\-\_\-workspace (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{new\-\_\-path}
+\end{DoxyParamCaption}
+) const}}\label{classworkspace_1_1_workspace_adab6c7f1f9c5352db90ec020da70ae11}
+
+
+already\-\_\-a\-\_\-workspace\-: vérifie si le dossier référencé par le path est déjà un workspace 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\-\_\-path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_aa107ed5e1e89e55d3fca11d426f409e4}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!back\-\_\-slash\-\_\-to\-\_\-slash@{back\-\_\-slash\-\_\-to\-\_\-slash}}
+\index{back\-\_\-slash\-\_\-to\-\_\-slash@{back\-\_\-slash\-\_\-to\-\_\-slash}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{back\-\_\-slash\-\_\-to\-\_\-slash}]{\setlength{\rightskip}{0pt plus 5cm}static Q\-String workspace\-::\-Workspace\-::back\-\_\-slash\-\_\-to\-\_\-slash (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classworkspace_1_1_workspace_aa107ed5e1e89e55d3fca11d426f409e4}
+
+
+back\-\_\-slash\-\_\-to\-\_\-slash 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une chaine modifiée 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_ab99fabc94aa0065443e72ea252969927}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!bind\-\_\-note@{bind\-\_\-note}}
+\index{bind\-\_\-note@{bind\-\_\-note}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{bind\-\_\-note}]{\setlength{\rightskip}{0pt plus 5cm}void workspace\-::\-Workspace\-::bind\-\_\-note (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{id, }
+\item[{const Q\-String \&}]{tag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classworkspace_1_1_workspace_ab99fabc94aa0065443e72ea252969927}
+
+
+bind\-\_\-note\-: liér une note à un tag 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em tag} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classworkspace_1_1_workspace_a9caa89c12cb648dd78b36f0652fa75e3}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!change\-\_\-workspace@{change\-\_\-workspace}}
+\index{change\-\_\-workspace@{change\-\_\-workspace}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{change\-\_\-workspace}]{\setlength{\rightskip}{0pt plus 5cm}static void workspace\-::\-Workspace\-::change\-\_\-workspace (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{new\-\_\-path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classworkspace_1_1_workspace_a9caa89c12cb648dd78b36f0652fa75e3}
+
+
+change\-\_\-workspace\-: faire référencer le \hyperlink{classworkspace_1_1_workspace}{Workspace} autre part sur le disque 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\-\_\-path,\-:} & le nouveau chemin du \hyperlink{classworkspace_1_1_workspace}{Workspace} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classworkspace_1_1_workspace_ae72600ffb0160998e06517327f8d2296}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!copy\-\_\-paste@{copy\-\_\-paste}}
+\index{copy\-\_\-paste@{copy\-\_\-paste}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{copy\-\_\-paste}]{\setlength{\rightskip}{0pt plus 5cm}static void workspace\-::\-Workspace\-::copy\-\_\-paste (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{new\-\_\-path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classworkspace_1_1_workspace_ae72600ffb0160998e06517327f8d2296}
+
+
+copy\-\_\-paste\-: copier/coller le \hyperlink{classworkspace_1_1_workspace}{Workspace} dans un nouvel emplacement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\-\_\-path,\-:} & l'emplacement où l'on veut coller le \hyperlink{classworkspace_1_1_workspace}{Workspace} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classworkspace_1_1_workspace_a555e62e540d13653a9a6680e93b44cd8}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!create\-\_\-note@{create\-\_\-note}}
+\index{create\-\_\-note@{create\-\_\-note}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{create\-\_\-note}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Notes\-Module\-::\-Note} $\ast$ Workspace\-::create\-\_\-note (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{type, }
+\item[{const Q\-String \&}]{id = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classworkspace_1_1_workspace_a555e62e540d13653a9a6680e93b44cd8}
+
+
+create\-\_\-note\-: créer une note, stockée directement dans le Notes\-Manager 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type,\-:} & audio, video, image, article ou document \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un pointeur sur la note créée 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_ae69a9277bdff9c37fa8cfe440f8a4c30}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!delete\-\_\-note@{delete\-\_\-note}}
+\index{delete\-\_\-note@{delete\-\_\-note}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{delete\-\_\-note}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::delete\-\_\-note (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{id}
+\end{DoxyParamCaption}
+)}}\label{classworkspace_1_1_workspace_ae69a9277bdff9c37fa8cfe440f8a4c30}
+
+
+delete\-\_\-note 
+
+\hypertarget{classworkspace_1_1_workspace_ac02f8eec10bd9dcbbad3a1e586f7ae1d}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!delete\-\_\-tag@{delete\-\_\-tag}}
+\index{delete\-\_\-tag@{delete\-\_\-tag}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{delete\-\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::delete\-\_\-tag (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{tag}
+\end{DoxyParamCaption}
+)}}\label{classworkspace_1_1_workspace_ac02f8eec10bd9dcbbad3a1e586f7ae1d}
+
+
+delete\-\_\-tag 
+
+\hypertarget{classworkspace_1_1_workspace_a60ae23039c19c001adccecde4bec32e4}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!do\-\_\-a\-\_\-backup@{do\-\_\-a\-\_\-backup}}
+\index{do\-\_\-a\-\_\-backup@{do\-\_\-a\-\_\-backup}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{do\-\_\-a\-\_\-backup}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::do\-\_\-a\-\_\-backup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classworkspace_1_1_workspace_a60ae23039c19c001adccecde4bec32e4}
+
+
+do\-\_\-a\-\_\-backup\-: fait un backup du \hyperlink{classworkspace_1_1_workspace}{Workspace} 
+
+\hypertarget{classworkspace_1_1_workspace_a2d7689e3fece579fd9ec86f596b0b60e}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!donner\-\_\-20\-\_\-au\-\_\-projet@{donner\-\_\-20\-\_\-au\-\_\-projet}}
+\index{donner\-\_\-20\-\_\-au\-\_\-projet@{donner\-\_\-20\-\_\-au\-\_\-projet}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{donner\-\_\-20\-\_\-au\-\_\-projet}]{\setlength{\rightskip}{0pt plus 5cm}bool workspace\-::\-Workspace\-::donner\-\_\-20\-\_\-au\-\_\-projet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classworkspace_1_1_workspace_a2d7689e3fece579fd9ec86f596b0b60e}
+
+
+donner\-\_\-20\-\_\-au\-\_\-projet\-: donne 20 au projet 
+
+\begin{DoxyReturn}{Returns}
+T\-R\-U\-E. Toujours. 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_a64568fb22aa97ab7874cf8dba0a26ee0}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!edit\-\_\-note@{edit\-\_\-note}}
+\index{edit\-\_\-note@{edit\-\_\-note}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{edit\-\_\-note}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Notes\-Module\-::\-Note} $\ast$ Workspace\-::edit\-\_\-note (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{id}
+\end{DoxyParamCaption}
+) const}}\label{classworkspace_1_1_workspace_a64568fb22aa97ab7874cf8dba0a26ee0}
+
+
+edit\-\_\-note\-: récupérer une note pour l'éditer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un pointeur sur la note 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_a23bf5733ad13d7d6579ab993061c5d4f}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!empty\-\_\-trash@{empty\-\_\-trash}}
+\index{empty\-\_\-trash@{empty\-\_\-trash}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{empty\-\_\-trash}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::empty\-\_\-trash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classworkspace_1_1_workspace_a23bf5733ad13d7d6579ab993061c5d4f}
+
+
+empty\-\_\-trash\-: vider la corbeille 
+
+\hypertarget{classworkspace_1_1_workspace_a0ede1d8365f03440a98734a511fb64de}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!erase\-\_\-file\-\_\-of\-\_\-notes@{erase\-\_\-file\-\_\-of\-\_\-notes}}
+\index{erase\-\_\-file\-\_\-of\-\_\-notes@{erase\-\_\-file\-\_\-of\-\_\-notes}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{erase\-\_\-file\-\_\-of\-\_\-notes}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::erase\-\_\-file\-\_\-of\-\_\-notes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classworkspace_1_1_workspace_a0ede1d8365f03440a98734a511fb64de}
+
+
+erase\-\_\-file\-\_\-of\-\_\-notes\-: supprimer le fichier de notes 
+
+\hypertarget{classworkspace_1_1_workspace_a03cc0063af4233671529564ae2bdf8e8}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!erase\-\_\-file\-\_\-of\-\_\-tags@{erase\-\_\-file\-\_\-of\-\_\-tags}}
+\index{erase\-\_\-file\-\_\-of\-\_\-tags@{erase\-\_\-file\-\_\-of\-\_\-tags}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{erase\-\_\-file\-\_\-of\-\_\-tags}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::erase\-\_\-file\-\_\-of\-\_\-tags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classworkspace_1_1_workspace_a03cc0063af4233671529564ae2bdf8e8}
+
+
+erase\-\_\-file\-\_\-of\-\_\-tags\-: supprimer le fichier de tags 
+
+\hypertarget{classworkspace_1_1_workspace_aa183b1533e93538bca6c2fbedb82433b}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!erase\-\_\-file\-\_\-of\-\_\-trash@{erase\-\_\-file\-\_\-of\-\_\-trash}}
+\index{erase\-\_\-file\-\_\-of\-\_\-trash@{erase\-\_\-file\-\_\-of\-\_\-trash}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{erase\-\_\-file\-\_\-of\-\_\-trash}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::erase\-\_\-file\-\_\-of\-\_\-trash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classworkspace_1_1_workspace_aa183b1533e93538bca6c2fbedb82433b}
+
+
+erase\-\_\-file\-\_\-of\-\_\-trash\-: supprimer le fichier de la corbeille 
+
+\hypertarget{classworkspace_1_1_workspace_a2e81bd3729b705d67086c394df7901ef}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!export\-\_\-note@{export\-\_\-note}}
+\index{export\-\_\-note@{export\-\_\-note}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{export\-\_\-note}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::export\-\_\-note (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{id, }
+\item[{const Q\-String \&}]{type, }
+\item[{const Q\-String \&}]{path\-\_\-export}
+\end{DoxyParamCaption}
+) const}}\label{classworkspace_1_1_workspace_a2e81bd3729b705d67086c394df7901ef}
+
+
+export\-\_\-note 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\-\_\-export} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classworkspace_1_1_workspace_a215d03715ce946b346b4b6bb3280fbe9}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!get\-\_\-notes\-\_\-by\-\_\-type@{get\-\_\-notes\-\_\-by\-\_\-type}}
+\index{get\-\_\-notes\-\_\-by\-\_\-type@{get\-\_\-notes\-\_\-by\-\_\-type}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{get\-\_\-notes\-\_\-by\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Set$<${\bf Notes\-Module\-::\-Note}$\ast$$>$ workspace\-::\-Workspace\-::get\-\_\-notes\-\_\-by\-\_\-type (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classworkspace_1_1_workspace_a215d03715ce946b346b4b6bb3280fbe9}
+
+
+get\-\_\-notes\-\_\-by\-\_\-type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la liste des notes correspondantes au type spécifié 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_a1a66b35b3c44dba8f729814ff8af4328}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!get\-\_\-path@{get\-\_\-path}}
+\index{get\-\_\-path@{get\-\_\-path}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{get\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String workspace\-::\-Workspace\-::get\-\_\-path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classworkspace_1_1_workspace_a1a66b35b3c44dba8f729814ff8af4328}
+
+
+get\-\_\-path 
+
+\begin{DoxyReturn}{Returns}
+le chemin du workspace 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_aa0d07ec34d96ad27dfa3f50dc4fe4c5d}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Workspace}$\ast$ workspace\-::\-Workspace\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classworkspace_1_1_workspace_aa0d07ec34d96ad27dfa3f50dc4fe4c5d}
+
+
+get\-Instance 
+
+\begin{DoxyReturn}{Returns}
+un pointeur sur l'unique intance 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_ad59c05ecb96bfec71e16f95466c4cbf0}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!kill\-The\-Workspace@{kill\-The\-Workspace}}
+\index{kill\-The\-Workspace@{kill\-The\-Workspace}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{kill\-The\-Workspace}]{\setlength{\rightskip}{0pt plus 5cm}static void workspace\-::\-Workspace\-::kill\-The\-Workspace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classworkspace_1_1_workspace_ad59c05ecb96bfec71e16f95466c4cbf0}
+
+
+kill\-The\-Workspace\-: désallouer de la mémoire l'unique instance 
+
+\hypertarget{classworkspace_1_1_workspace_af3d7148dc6d3a11887196d24fa078fcb}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!load@{load}}
+\index{load@{load}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classworkspace_1_1_workspace_af3d7148dc6d3a11887196d24fa078fcb}
+
+
+load\-: charger le \hyperlink{classworkspace_1_1_workspace}{Workspace} 
+
+\hypertarget{classworkspace_1_1_workspace_a2e4fdc7d825069cfcec38dc5dc3060b4}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Notes\-Module\-::\-Note} $\ast$ Workspace\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{path}
+\end{DoxyParamCaption}
+) const}}\label{classworkspace_1_1_workspace_a2e4fdc7d825069cfcec38dc5dc3060b4}
+
+
+operator \mbox{[}\mbox{]} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un pointeur sur la note trouvée 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_adaf682c34c80a66ed9bd83aac81ea789}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!release\-The\-Workspace@{release\-The\-Workspace}}
+\index{release\-The\-Workspace@{release\-The\-Workspace}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{release\-The\-Workspace}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Workspace}$\ast$ workspace\-::\-Workspace\-::release\-The\-Workspace (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classworkspace_1_1_workspace_adaf682c34c80a66ed9bd83aac81ea789}
+
+
+release\-The\-Workspace\-: initialiser une première fois le \hyperlink{classworkspace_1_1_workspace}{Workspace} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un pointeur sur l'unique instance 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_ad0a54e4a704366d1ff8f2c57b8fcec91}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!reset@{reset}}
+\index{reset@{reset}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}static void workspace\-::\-Workspace\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classworkspace_1_1_workspace_ad0a54e4a704366d1ff8f2c57b8fcec91}
+
+
+reset\-: effectuer une remise à 0 du \hyperlink{classworkspace_1_1_workspace}{Workspace} 
+
+\hypertarget{classworkspace_1_1_workspace_a6716ce0aa8484fcb6ab5be51a2ac2acc}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!save@{save}}
+\index{save@{save}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classworkspace_1_1_workspace_a6716ce0aa8484fcb6ab5be51a2ac2acc}
+
+
+save\-: sauvegarder le \hyperlink{classworkspace_1_1_workspace}{Workspace} 
+
+\hypertarget{classworkspace_1_1_workspace_aa87dbe4a01822696c551bf56d9912f0e}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!save\-\_\-note@{save\-\_\-note}}
+\index{save\-\_\-note@{save\-\_\-note}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{save\-\_\-note}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::save\-\_\-note (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{type, }
+\item[{const Q\-String \&}]{id}
+\end{DoxyParamCaption}
+)}}\label{classworkspace_1_1_workspace_aa87dbe4a01822696c551bf56d9912f0e}
+
+
+save\-\_\-note 
+
+\hypertarget{classworkspace_1_1_workspace_a191c786701c0bcfcb216f7a1f06d3df4}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!save\-\_\-tag@{save\-\_\-tag}}
+\index{save\-\_\-tag@{save\-\_\-tag}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{save\-\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::save\-\_\-tag (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{tag}
+\end{DoxyParamCaption}
+)}}\label{classworkspace_1_1_workspace_a191c786701c0bcfcb216f7a1f06d3df4}
+
+
+save\-\_\-tag 
+
+\hypertarget{classworkspace_1_1_workspace_aef089d995061202833136a2d1a55d7ce}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!slash\-\_\-to\-\_\-back\-\_\-slash@{slash\-\_\-to\-\_\-back\-\_\-slash}}
+\index{slash\-\_\-to\-\_\-back\-\_\-slash@{slash\-\_\-to\-\_\-back\-\_\-slash}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{slash\-\_\-to\-\_\-back\-\_\-slash}]{\setlength{\rightskip}{0pt plus 5cm}static Q\-String workspace\-::\-Workspace\-::slash\-\_\-to\-\_\-back\-\_\-slash (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classworkspace_1_1_workspace_aef089d995061202833136a2d1a55d7ce}
+
+
+slash\-\_\-to\-\_\-back\-\_\-slash 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une chaine modifiée 
+\end{DoxyReturn}
+\hypertarget{classworkspace_1_1_workspace_a5ea330230fea932aa4de1aa3aea5bcc7}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!unbind\-\_\-note@{unbind\-\_\-note}}
+\index{unbind\-\_\-note@{unbind\-\_\-note}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{unbind\-\_\-note}]{\setlength{\rightskip}{0pt plus 5cm}void workspace\-::\-Workspace\-::unbind\-\_\-note (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{id, }
+\item[{const Q\-String \&}]{tag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classworkspace_1_1_workspace_a5ea330230fea932aa4de1aa3aea5bcc7}
+
+
+unbind\-\_\-note\-: enlever le lien entre une note et un tag 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em tag} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classworkspace_1_1_workspace_a18b85cb58ef636b9cf199267ba1a0b50}{\index{workspace\-::\-Workspace@{workspace\-::\-Workspace}!undo\-\_\-delete\-\_\-note@{undo\-\_\-delete\-\_\-note}}
+\index{undo\-\_\-delete\-\_\-note@{undo\-\_\-delete\-\_\-note}!workspace::Workspace@{workspace\-::\-Workspace}}
+\subsubsection[{undo\-\_\-delete\-\_\-note}]{\setlength{\rightskip}{0pt plus 5cm}void Workspace\-::undo\-\_\-delete\-\_\-note (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{id}
+\end{DoxyParamCaption}
+)}}\label{classworkspace_1_1_workspace_a18b85cb58ef636b9cf199267ba1a0b50}
+
+
+undo\-\_\-delete\-\_\-note 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_workspace_8h}{Workspace.\-h}\item 
+\hyperlink{_workspace_8cpp}{Workspace.\-cpp}\end{DoxyCompactItemize}

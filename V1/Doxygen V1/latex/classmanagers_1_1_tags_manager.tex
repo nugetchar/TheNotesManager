@@ -1,0 +1,243 @@
+\hypertarget{classmanagers_1_1_tags_manager}{\section{managers\-:\-:Tags\-Manager Class Reference}
+\label{classmanagers_1_1_tags_manager}\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}}
+}
+
+
+The \hyperlink{classmanagers_1_1_tags_manager}{Tags\-Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$Managers.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef list\-\_\-notes\-::\-Iterator \hyperlink{classmanagers_1_1_tags_manager_a9d5b2971266b5836d80801a1ed2a8517}{iterator\-\_\-notes}
+\item 
+typedef list\-\_\-notes\-::\-Const\-Iterator \hyperlink{classmanagers_1_1_tags_manager_afb8b7b6090c26853946b86b557986d17}{const\-\_\-iterator\-\_\-notes}
+\item 
+typedef Q\-Map$<$ Q\-String, \\*
+list\-\_\-notes $\ast$ $>$\-::Iterator \hyperlink{classmanagers_1_1_tags_manager_a7064c805f49f35cd2508b420b3bf00ed}{iterator}
+\item 
+typedef Q\-Map$<$ Q\-String, \\*
+list\-\_\-notes $\ast$ $>$\-::Const\-Iterator \hyperlink{classmanagers_1_1_tags_manager_a6f717302ace6d00a4b8b97b60fa596f8}{const\-\_\-iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmanagers_1_1_tags_manager_a6f717302ace6d00a4b8b97b60fa596f8}{const\-\_\-iterator} \hyperlink{classmanagers_1_1_tags_manager_ac21785b99cd30cdea183a604cd5c0d86}{const\-Begin} ()
+\item 
+\hyperlink{classmanagers_1_1_tags_manager_a7064c805f49f35cd2508b420b3bf00ed}{iterator} \hyperlink{classmanagers_1_1_tags_manager_a66233b3ddb4caf56eb3768c2f23ce9b5}{begin} ()
+\item 
+\hyperlink{classmanagers_1_1_tags_manager_a6f717302ace6d00a4b8b97b60fa596f8}{const\-\_\-iterator} \hyperlink{classmanagers_1_1_tags_manager_aa088102ea60f93a80ee8f3f5412e8f28}{const\-End} ()
+\item 
+\hyperlink{classmanagers_1_1_tags_manager_a7064c805f49f35cd2508b420b3bf00ed}{iterator} \hyperlink{classmanagers_1_1_tags_manager_a55e7bec26f70a038c8c296c83a8ef3a1}{end} ()
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_add89da08be2a26d0669766b34c65ebc2}{operator+=} (const Q\-String \&)
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_ae769ad392e49d2f1b81606a89ab457cc}{operator-\/=} (const Q\-String \&)
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_a21e100cdad6069c98f9ece117bf532d4}{bind\-\_\-tag} (const Q\-String \&, \hyperlink{class_notes_module_1_1_note}{Notes\-Module\-::\-Note} \&)
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_a2eb86477e32b09f3241bc38eadbe166a}{unbind\-\_\-tag} (const Q\-String \&, \hyperlink{class_notes_module_1_1_note}{Notes\-Module\-::\-Note} \&)
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_a73e69fdf06fce0a363a8131f91d644cb}{bind\-\_\-tag} (const Q\-String \&, const Q\-String \&)
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_a7dea75f62a27dc3cf139bd54292cb780}{unbind\-\_\-tag} (const Q\-String \&, const Q\-String \&)
+\item 
+Q\-Set$<$ Q\-String $>$ $\ast$ \hyperlink{classmanagers_1_1_tags_manager_a84f5328b5f8c81e6ba9e4a2f1cf94437}{get\-\_\-collection\-\_\-of\-\_\-tags} (Q\-Set$<$ Q\-String $>$ $\ast$)
+\item 
+list\-\_\-notes $\ast$ \hyperlink{classmanagers_1_1_tags_manager_a4a54cb372bc9e88f18b0bfcff6490232}{filter} (const Q\-String \&)
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_a4423932585349e735f6942d70d0a236e}{load} ()
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_ae1ec735d4b1520885c3c57dea0ecaf15}{save} () const 
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_a390501d2d80c02bdbd2877cc3ea64671}{pop} (const Q\-String \&tag)
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_ae1d2ab2a19caf372c47e60a5ff3ac240}{push} (const Q\-String \&tag)
+\item 
+void \hyperlink{classmanagers_1_1_tags_manager_a45867e0bf724ba4eedb14f55241bac93}{set\-\_\-path} (const Q\-String \&new\-\_\-path)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmanagers_1_1_tags_manager}{Tags\-Manager} $\ast$ \hyperlink{classmanagers_1_1_tags_manager_a69c21db79b6d3330df74844f68e973d4}{create\-Instance} (const Q\-String \&, const Q\-String \&)
+\item 
+static \hyperlink{classmanagers_1_1_tags_manager}{Tags\-Manager} $\ast$ \hyperlink{classmanagers_1_1_tags_manager_a69ec47c2c719978ef2b79d16a67cff8e}{get\-Instance} ()
+\item 
+static void \hyperlink{classmanagers_1_1_tags_manager_adf57db243bf859f59e50b9e1d4b3c741}{free\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classmanagers_1_1_tags_manager}{Tags\-Manager} class. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmanagers_1_1_tags_manager_a6f717302ace6d00a4b8b97b60fa596f8}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!const\-\_\-iterator@{const\-\_\-iterator}}
+\index{const\-\_\-iterator@{const\-\_\-iterator}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{const\-\_\-iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef Q\-Map$<$Q\-String,list\-\_\-notes$\ast$$>$\-::Const\-Iterator {\bf managers\-::\-Tags\-Manager\-::const\-\_\-iterator}}}\label{classmanagers_1_1_tags_manager_a6f717302ace6d00a4b8b97b60fa596f8}
+\hypertarget{classmanagers_1_1_tags_manager_afb8b7b6090c26853946b86b557986d17}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!const\-\_\-iterator\-\_\-notes@{const\-\_\-iterator\-\_\-notes}}
+\index{const\-\_\-iterator\-\_\-notes@{const\-\_\-iterator\-\_\-notes}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{const\-\_\-iterator\-\_\-notes}]{\setlength{\rightskip}{0pt plus 5cm}typedef list\-\_\-notes\-::\-Const\-Iterator {\bf managers\-::\-Tags\-Manager\-::const\-\_\-iterator\-\_\-notes}}}\label{classmanagers_1_1_tags_manager_afb8b7b6090c26853946b86b557986d17}
+\hypertarget{classmanagers_1_1_tags_manager_a7064c805f49f35cd2508b420b3bf00ed}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!iterator@{iterator}}
+\index{iterator@{iterator}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef Q\-Map$<$Q\-String,list\-\_\-notes$\ast$$>$\-::Iterator {\bf managers\-::\-Tags\-Manager\-::iterator}}}\label{classmanagers_1_1_tags_manager_a7064c805f49f35cd2508b420b3bf00ed}
+\hypertarget{classmanagers_1_1_tags_manager_a9d5b2971266b5836d80801a1ed2a8517}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!iterator\-\_\-notes@{iterator\-\_\-notes}}
+\index{iterator\-\_\-notes@{iterator\-\_\-notes}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{iterator\-\_\-notes}]{\setlength{\rightskip}{0pt plus 5cm}typedef list\-\_\-notes\-::\-Iterator {\bf managers\-::\-Tags\-Manager\-::iterator\-\_\-notes}}}\label{classmanagers_1_1_tags_manager_a9d5b2971266b5836d80801a1ed2a8517}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmanagers_1_1_tags_manager_a66233b3ddb4caf56eb3768c2f23ce9b5}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!begin@{begin}}
+\index{begin@{begin}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} managers\-::\-Tags\-Manager\-::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmanagers_1_1_tags_manager_a66233b3ddb4caf56eb3768c2f23ce9b5}
+\hypertarget{classmanagers_1_1_tags_manager_a21e100cdad6069c98f9ece117bf532d4}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!bind\-\_\-tag@{bind\-\_\-tag}}
+\index{bind\-\_\-tag@{bind\-\_\-tag}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{bind\-\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}void Tags\-Manager\-::bind\-\_\-tag (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{t, }
+\item[{{\bf Notes\-Module\-::\-Note} \&}]{n}
+\end{DoxyParamCaption}
+)}}\label{classmanagers_1_1_tags_manager_a21e100cdad6069c98f9ece117bf532d4}
+\hypertarget{classmanagers_1_1_tags_manager_a73e69fdf06fce0a363a8131f91d644cb}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!bind\-\_\-tag@{bind\-\_\-tag}}
+\index{bind\-\_\-tag@{bind\-\_\-tag}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{bind\-\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}void Tags\-Manager\-::bind\-\_\-tag (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{t, }
+\item[{const Q\-String \&}]{id}
+\end{DoxyParamCaption}
+)}}\label{classmanagers_1_1_tags_manager_a73e69fdf06fce0a363a8131f91d644cb}
+\hypertarget{classmanagers_1_1_tags_manager_ac21785b99cd30cdea183a604cd5c0d86}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!const\-Begin@{const\-Begin}}
+\index{const\-Begin@{const\-Begin}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{const\-Begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\-\_\-iterator} managers\-::\-Tags\-Manager\-::const\-Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmanagers_1_1_tags_manager_ac21785b99cd30cdea183a604cd5c0d86}
+\hypertarget{classmanagers_1_1_tags_manager_aa088102ea60f93a80ee8f3f5412e8f28}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!const\-End@{const\-End}}
+\index{const\-End@{const\-End}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{const\-End}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\-\_\-iterator} managers\-::\-Tags\-Manager\-::const\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmanagers_1_1_tags_manager_aa088102ea60f93a80ee8f3f5412e8f28}
+\hypertarget{classmanagers_1_1_tags_manager_a69c21db79b6d3330df74844f68e973d4}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!create\-Instance@{create\-Instance}}
+\index{create\-Instance@{create\-Instance}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{create\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tags\-Manager} $\ast$ Tags\-Manager\-::create\-Instance (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{workspace, }
+\item[{const Q\-String \&}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmanagers_1_1_tags_manager_a69c21db79b6d3330df74844f68e973d4}
+\hypertarget{classmanagers_1_1_tags_manager_a55e7bec26f70a038c8c296c83a8ef3a1}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!end@{end}}
+\index{end@{end}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} managers\-::\-Tags\-Manager\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmanagers_1_1_tags_manager_a55e7bec26f70a038c8c296c83a8ef3a1}
+\hypertarget{classmanagers_1_1_tags_manager_a4a54cb372bc9e88f18b0bfcff6490232}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!filter@{filter}}
+\index{filter@{filter}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}Tags\-Manager\-::list\-\_\-notes $\ast$ Tags\-Manager\-::filter (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{tag}
+\end{DoxyParamCaption}
+)}}\label{classmanagers_1_1_tags_manager_a4a54cb372bc9e88f18b0bfcff6490232}
+\hypertarget{classmanagers_1_1_tags_manager_adf57db243bf859f59e50b9e1d4b3c741}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!free\-Instance@{free\-Instance}}
+\index{free\-Instance@{free\-Instance}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{free\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void Tags\-Manager\-::free\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmanagers_1_1_tags_manager_adf57db243bf859f59e50b9e1d4b3c741}
+\hypertarget{classmanagers_1_1_tags_manager_a84f5328b5f8c81e6ba9e4a2f1cf94437}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!get\-\_\-collection\-\_\-of\-\_\-tags@{get\-\_\-collection\-\_\-of\-\_\-tags}}
+\index{get\-\_\-collection\-\_\-of\-\_\-tags@{get\-\_\-collection\-\_\-of\-\_\-tags}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{get\-\_\-collection\-\_\-of\-\_\-tags}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Set$<$ Q\-String $>$ $\ast$ Tags\-Manager\-::get\-\_\-collection\-\_\-of\-\_\-tags (
+\begin{DoxyParamCaption}
+\item[{Q\-Set$<$ Q\-String $>$ $\ast$}]{collection}
+\end{DoxyParamCaption}
+)}}\label{classmanagers_1_1_tags_manager_a84f5328b5f8c81e6ba9e4a2f1cf94437}
+\hypertarget{classmanagers_1_1_tags_manager_a69ec47c2c719978ef2b79d16a67cff8e}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tags\-Manager} $\ast$ Tags\-Manager\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classmanagers_1_1_tags_manager_a69ec47c2c719978ef2b79d16a67cff8e}
+\hypertarget{classmanagers_1_1_tags_manager_a4423932585349e735f6942d70d0a236e}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!load@{load}}
+\index{load@{load}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Tags\-Manager\-::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmanagers_1_1_tags_manager_a4423932585349e735f6942d70d0a236e}
+\hypertarget{classmanagers_1_1_tags_manager_add89da08be2a26d0669766b34c65ebc2}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}void Tags\-Manager\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{t}
+\end{DoxyParamCaption}
+)}}\label{classmanagers_1_1_tags_manager_add89da08be2a26d0669766b34c65ebc2}
+\hypertarget{classmanagers_1_1_tags_manager_ae769ad392e49d2f1b81606a89ab457cc}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}void Tags\-Manager\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{t}
+\end{DoxyParamCaption}
+)}}\label{classmanagers_1_1_tags_manager_ae769ad392e49d2f1b81606a89ab457cc}
+\hypertarget{classmanagers_1_1_tags_manager_a390501d2d80c02bdbd2877cc3ea64671}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!pop@{pop}}
+\index{pop@{pop}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}void managers\-::\-Tags\-Manager\-::pop (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{tag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmanagers_1_1_tags_manager_a390501d2d80c02bdbd2877cc3ea64671}
+\hypertarget{classmanagers_1_1_tags_manager_ae1d2ab2a19caf372c47e60a5ff3ac240}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!push@{push}}
+\index{push@{push}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void managers\-::\-Tags\-Manager\-::push (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{tag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmanagers_1_1_tags_manager_ae1d2ab2a19caf372c47e60a5ff3ac240}
+\hypertarget{classmanagers_1_1_tags_manager_ae1ec735d4b1520885c3c57dea0ecaf15}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!save@{save}}
+\index{save@{save}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Tags\-Manager\-::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmanagers_1_1_tags_manager_ae1ec735d4b1520885c3c57dea0ecaf15}
+\hypertarget{classmanagers_1_1_tags_manager_a45867e0bf724ba4eedb14f55241bac93}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!set\-\_\-path@{set\-\_\-path}}
+\index{set\-\_\-path@{set\-\_\-path}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{set\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}void managers\-::\-Tags\-Manager\-::set\-\_\-path (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{new\-\_\-path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmanagers_1_1_tags_manager_a45867e0bf724ba4eedb14f55241bac93}
+\hypertarget{classmanagers_1_1_tags_manager_a2eb86477e32b09f3241bc38eadbe166a}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!unbind\-\_\-tag@{unbind\-\_\-tag}}
+\index{unbind\-\_\-tag@{unbind\-\_\-tag}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{unbind\-\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}void Tags\-Manager\-::unbind\-\_\-tag (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{t, }
+\item[{{\bf Notes\-Module\-::\-Note} \&}]{n}
+\end{DoxyParamCaption}
+)}}\label{classmanagers_1_1_tags_manager_a2eb86477e32b09f3241bc38eadbe166a}
+\hypertarget{classmanagers_1_1_tags_manager_a7dea75f62a27dc3cf139bd54292cb780}{\index{managers\-::\-Tags\-Manager@{managers\-::\-Tags\-Manager}!unbind\-\_\-tag@{unbind\-\_\-tag}}
+\index{unbind\-\_\-tag@{unbind\-\_\-tag}!managers::TagsManager@{managers\-::\-Tags\-Manager}}
+\subsubsection[{unbind\-\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}void Tags\-Manager\-::unbind\-\_\-tag (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{t, }
+\item[{const Q\-String \&}]{id}
+\end{DoxyParamCaption}
+)}}\label{classmanagers_1_1_tags_manager_a7dea75f62a27dc3cf139bd54292cb780}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_managers_8h}{Managers.\-h}\item 
+\hyperlink{_managers_8cpp}{Managers.\-cpp}\end{DoxyCompactItemize}

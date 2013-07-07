@@ -1,0 +1,157 @@
+\hypertarget{class_notes_module_1_1_article}{\section{Notes\-Module\-:\-:Article Class Reference}
+\label{class_notes_module_1_1_article}\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}}
+}
+
+
+The \hyperlink{class_notes_module_1_1_article}{Article} class.  
+
+
+
+
+{\ttfamily \#include $<$Notes\-Module.\-h$>$}
+
+Inheritance diagram for Notes\-Module\-:\-:Article\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_notes_module_1_1_article}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_notes_module_1_1_article_a14bd69c93b97e3570f5f9e53e36a6611}{Article} (const Q\-String \&id=0, const Q\-String \&title=0)
+\item 
+const Q\-String \& \hyperlink{class_notes_module_1_1_article_a224b20a2e3bd335ea841aac87146c42f}{get\-Text} () const 
+\item 
+void \hyperlink{class_notes_module_1_1_article_a7144942027b1761cfcbd21761dd5cee8}{set\-Text} (const Q\-String \&t)
+\item 
+void \hyperlink{class_notes_module_1_1_article_ad2548df0555da4ad5e0af00c812e46c6}{load} ()
+\item 
+void \hyperlink{class_notes_module_1_1_article_afa8759e89a65df85ee62a5fe0af77bcc}{save} ()
+\item 
+Q\-String \hyperlink{class_notes_module_1_1_article_ac9d3eecc9975d1c69a46cafee33fe093}{get\-Type} () const 
+\item 
+void \hyperlink{class_notes_module_1_1_article_a802661b23e36dd7ab69b149a5c07b7cd}{exporter} (const Q\-String \&path\-\_\-export, \hyperlink{_t_y_p_e_s___e_x_p_o_r_t_8h_a25a17d8584d83ab977791df2476e006c}{T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T} type\-\_\-export) const 
+\item 
+void \hyperlink{class_notes_module_1_1_article_a62ba9a5575c03a0b8c73cca7ea343a3b}{export\-As\-Part} (Q\-Text\-Stream \&out, \hyperlink{_t_y_p_e_s___e_x_p_o_r_t_8h_a25a17d8584d83ab977791df2476e006c}{T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T} type\-\_\-export, unsigned int title\-Level) const 
+\item 
+void \hyperlink{class_notes_module_1_1_article_aa7c392c87fe88ef3f94aa52690bc64e2}{rewrite\-\_\-in\-\_\-trash} (Q\-Text\-Stream \&out) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_notes_module_1_1_article_a017a5144e8cfa6087305055ab968ef41}{Notes\-Manager}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_notes_module_1_1_article}{Article} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_notes_module_1_1_article_a14bd69c93b97e3570f5f9e53e36a6611}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!Article@{Article}}
+\index{Article@{Article}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{Article}]{\setlength{\rightskip}{0pt plus 5cm}Notes\-Module\-::\-Article\-::\-Article (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{id = {\ttfamily 0}, }
+\item[{const Q\-String \&}]{title = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_notes_module_1_1_article_a14bd69c93b97e3570f5f9e53e36a6611}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_notes_module_1_1_article_a62ba9a5575c03a0b8c73cca7ea343a3b}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!export\-As\-Part@{export\-As\-Part}}
+\index{export\-As\-Part@{export\-As\-Part}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{export\-As\-Part}]{\setlength{\rightskip}{0pt plus 5cm}void Article\-::export\-As\-Part (
+\begin{DoxyParamCaption}
+\item[{Q\-Text\-Stream \&}]{out, }
+\item[{{\bf T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T}}]{type\-\_\-export, }
+\item[{unsigned int}]{title\-Level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_article_a62ba9a5575c03a0b8c73cca7ea343a3b}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_a71320195744f761430f9efe356c8e55d}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_article_a802661b23e36dd7ab69b149a5c07b7cd}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!exporter@{exporter}}
+\index{exporter@{exporter}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{exporter}]{\setlength{\rightskip}{0pt plus 5cm}void Article\-::exporter (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{path\-\_\-export, }
+\item[{{\bf T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T}}]{type\-\_\-export}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_article_a802661b23e36dd7ab69b149a5c07b7cd}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_a6b14ab7f7fc1bb12ead4f8c0ba14a1f7}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_article_a224b20a2e3bd335ea841aac87146c42f}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!get\-Text@{get\-Text}}
+\index{get\-Text@{get\-Text}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{get\-Text}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String\& Notes\-Module\-::\-Article\-::get\-Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_notes_module_1_1_article_a224b20a2e3bd335ea841aac87146c42f}
+\hypertarget{class_notes_module_1_1_article_ac9d3eecc9975d1c69a46cafee33fe093}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Article\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_article_ac9d3eecc9975d1c69a46cafee33fe093}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_aabb430fe24e65eda49993d1340583489}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_article_ad2548df0555da4ad5e0af00c812e46c6}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!load@{load}}
+\index{load@{load}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Article\-::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_article_ad2548df0555da4ad5e0af00c812e46c6}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_ad1b766b75cc0c201cab42ca0ee175efb}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_article_aa7c392c87fe88ef3f94aa52690bc64e2}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!rewrite\-\_\-in\-\_\-trash@{rewrite\-\_\-in\-\_\-trash}}
+\index{rewrite\-\_\-in\-\_\-trash@{rewrite\-\_\-in\-\_\-trash}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{rewrite\-\_\-in\-\_\-trash}]{\setlength{\rightskip}{0pt plus 5cm}void Article\-::rewrite\-\_\-in\-\_\-trash (
+\begin{DoxyParamCaption}
+\item[{Q\-Text\-Stream \&}]{out}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_article_aa7c392c87fe88ef3f94aa52690bc64e2}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_a6ec4ccea385dd368fb7c50f52de470d7}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_article_afa8759e89a65df85ee62a5fe0af77bcc}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!save@{save}}
+\index{save@{save}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Article\-::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_notes_module_1_1_article_afa8759e89a65df85ee62a5fe0af77bcc}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_aafaae92e7b543c5936dccc9b3f05bac0}{Notes\-Module\-::\-Note}.
+
+\hypertarget{class_notes_module_1_1_article_a7144942027b1761cfcbd21761dd5cee8}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!set\-Text@{set\-Text}}
+\index{set\-Text@{set\-Text}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{set\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void Article\-::set\-Text (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_notes_module_1_1_article_a7144942027b1761cfcbd21761dd5cee8}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_notes_module_1_1_article_a017a5144e8cfa6087305055ab968ef41}{\index{Notes\-Module\-::\-Article@{Notes\-Module\-::\-Article}!Notes\-Manager@{Notes\-Manager}}
+\index{Notes\-Manager@{Notes\-Manager}!NotesModule::Article@{Notes\-Module\-::\-Article}}
+\subsubsection[{Notes\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}friend class Notes\-Manager\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_notes_module_1_1_article_a017a5144e8cfa6087305055ab968ef41}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_notes_module_8h}{Notes\-Module.\-h}\item 
+\hyperlink{_notes_module_8cpp}{Notes\-Module.\-cpp}\end{DoxyCompactItemize}

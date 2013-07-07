@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/resources">
+        <file>resources/file.png</file>
+        <file>resources/folder.png</file>
+        <file>resources/trash.png</file>
+        <file>resources/video.png</file>
+        <file>resources/audio.png</file>
+        <file>resources/bluefile.png</file>
+        <file>resources/quit.png</file>
+        <file>resources/export.png</file>
+        <file>resources/workspace.png</file>
+        <file>resources/delete.png</file>
+        <file>resources/save.png</file>
+        <file>resources/manager.png</file>
+        <file>resources/addtag.png</file>
+        <file>resources/removetag.png</file>
+        <file>resources/new.png</file>
+        <file>resources/restore.png</file>
+        <file>resources/browse.png</file>
+        <file>resources/play.png</file>
+        <file>resources/pause.png</file>
+        <file>resources/stop.png</file>
+        <file>resources/picture.png</file>
+    </qresource>
+</RCC>

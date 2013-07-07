@@ -1,0 +1,25 @@
+var classworkspace_1_1_workspace =
+[
+    [ "already_a_workspace", "classworkspace_1_1_workspace.html#adab6c7f1f9c5352db90ec020da70ae11", null ],
+    [ "bind_note", "classworkspace_1_1_workspace.html#ab99fabc94aa0065443e72ea252969927", null ],
+    [ "create_note", "classworkspace_1_1_workspace.html#a555e62e540d13653a9a6680e93b44cd8", null ],
+    [ "delete_note", "classworkspace_1_1_workspace.html#ae69a9277bdff9c37fa8cfe440f8a4c30", null ],
+    [ "delete_tag", "classworkspace_1_1_workspace.html#ac02f8eec10bd9dcbbad3a1e586f7ae1d", null ],
+    [ "do_a_backup", "classworkspace_1_1_workspace.html#a60ae23039c19c001adccecde4bec32e4", null ],
+    [ "donner_20_au_projet", "classworkspace_1_1_workspace.html#a2d7689e3fece579fd9ec86f596b0b60e", null ],
+    [ "edit_note", "classworkspace_1_1_workspace.html#a64568fb22aa97ab7874cf8dba0a26ee0", null ],
+    [ "empty_trash", "classworkspace_1_1_workspace.html#a23bf5733ad13d7d6579ab993061c5d4f", null ],
+    [ "erase_file_of_notes", "classworkspace_1_1_workspace.html#a0ede1d8365f03440a98734a511fb64de", null ],
+    [ "erase_file_of_tags", "classworkspace_1_1_workspace.html#a03cc0063af4233671529564ae2bdf8e8", null ],
+    [ "erase_file_of_trash", "classworkspace_1_1_workspace.html#aa183b1533e93538bca6c2fbedb82433b", null ],
+    [ "export_note", "classworkspace_1_1_workspace.html#a2e81bd3729b705d67086c394df7901ef", null ],
+    [ "get_notes_by_type", "classworkspace_1_1_workspace.html#a215d03715ce946b346b4b6bb3280fbe9", null ],
+    [ "get_path", "classworkspace_1_1_workspace.html#a1a66b35b3c44dba8f729814ff8af4328", null ],
+    [ "load", "classworkspace_1_1_workspace.html#af3d7148dc6d3a11887196d24fa078fcb", null ],
+    [ "operator[]", "classworkspace_1_1_workspace.html#a2e4fdc7d825069cfcec38dc5dc3060b4", null ],
+    [ "save", "classworkspace_1_1_workspace.html#a6716ce0aa8484fcb6ab5be51a2ac2acc", null ],
+    [ "save_note", "classworkspace_1_1_workspace.html#aa87dbe4a01822696c551bf56d9912f0e", null ],
+    [ "save_tag", "classworkspace_1_1_workspace.html#a191c786701c0bcfcb216f7a1f06d3df4", null ],
+    [ "unbind_note", "classworkspace_1_1_workspace.html#a5ea330230fea932aa4de1aa3aea5bcc7", null ],
+    [ "undo_delete_note", "classworkspace_1_1_workspace.html#a18b85cb58ef636b9cf199267ba1a0b50", null ]
+];

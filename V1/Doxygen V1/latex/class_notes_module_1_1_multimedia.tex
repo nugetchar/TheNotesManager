@@ -1,0 +1,284 @@
+\hypertarget{class_notes_module_1_1_multimedia}{\section{Notes\-Module\-:\-:Multimedia Class Reference}
+\label{class_notes_module_1_1_multimedia}\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}}
+}
+
+
+The \hyperlink{class_notes_module_1_1_multimedia}{Multimedia} class.  
+
+
+
+
+{\ttfamily \#include $<$Notes\-Module.\-h$>$}
+
+Inheritance diagram for Notes\-Module\-:\-:Multimedia\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_notes_module_1_1_multimedia}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_notes_module_1_1_multimedia_ace5497afd6842429a39316d6568bd9df}{Multimedia} (const Q\-String \&id=0, const Q\-String \&title=0, const Q\-String \&path=0, const Q\-String \&description=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_notes_module_1_1_multimedia}{Multimedia}\-: constructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_notes_module_1_1_multimedia_a1cc0bde00eef2c506b92629a18f2fc9b}{Multimedia} (const \hyperlink{class_notes_module_1_1_note}{Note} \&n, const Q\-String \&path=0, const Q\-String \&description=0)
+\item 
+void \hyperlink{class_notes_module_1_1_multimedia_a37734d02d1de1b2d8013477f3abe63ee}{set\-Description} (const Q\-String \&d)
+\begin{DoxyCompactList}\small\item\em set\-Description\-: affecter une nouvelle description � la \hyperlink{class_notes_module_1_1_note}{Note} \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_notes_module_1_1_multimedia_af567d9c6e680914fccd775c9b3c6d439}{load} ()=0
+\item 
+virtual void \hyperlink{class_notes_module_1_1_multimedia_a06a7716c7b09908813ceb3cd79ab81cb}{save} ()=0
+\item 
+void \hyperlink{class_notes_module_1_1_multimedia_ab3ff034d77ecae83ce4502b66e960ddc}{set\-Path} (const Q\-String \&p)
+\begin{DoxyCompactList}\small\item\em set\-Path\-: affecter un nouveau chemin référant \end{DoxyCompactList}\item 
+const Q\-String \& \hyperlink{class_notes_module_1_1_multimedia_aa93321f835dc4a2128a34ec399f33476}{get\-Description} () const 
+\begin{DoxyCompactList}\small\item\em get\-Description\-: obtenir la description de la \hyperlink{class_notes_module_1_1_note}{Note} \end{DoxyCompactList}\item 
+const Q\-String \& \hyperlink{class_notes_module_1_1_multimedia_af184859fb26e134660a555d5a502b6b0}{get\-Path} () const 
+\begin{DoxyCompactList}\small\item\em get\-Path\-: obtenir le chemin référant \end{DoxyCompactList}\item 
+virtual Q\-String \hyperlink{class_notes_module_1_1_multimedia_a3380989b66a74159e22046490fce1cb7}{get\-Type} () const =0
+\item 
+Q\-String \hyperlink{class_notes_module_1_1_multimedia_a01591bd65388c073a945c294eec2bb83}{get\-Extension} () const 
+\item 
+virtual void \hyperlink{class_notes_module_1_1_multimedia_a14d7e27fe91172717ed41e572666c4fa}{exporter} (const Q\-String \&path\-\_\-export, \hyperlink{_t_y_p_e_s___e_x_p_o_r_t_8h_a25a17d8584d83ab977791df2476e006c}{T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T} type\-\_\-export) const =0
+\item 
+virtual void \hyperlink{class_notes_module_1_1_multimedia_afd58f93d779e3c47226344edbca4b935}{export\-As\-Part} (Q\-Text\-Stream \&out, \hyperlink{_t_y_p_e_s___e_x_p_o_r_t_8h_a25a17d8584d83ab977791df2476e006c}{T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T} type\-\_\-export, unsigned int title\-Level) const =0
+\item 
+virtual void \hyperlink{class_notes_module_1_1_multimedia_a43df5a7e5a7c8dbc6fd7ca9c39bb6623}{rewrite\-\_\-in\-\_\-trash} (Q\-Text\-Stream \&out) const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-String \hyperlink{class_notes_module_1_1_multimedia_a37df67b92a13a673b96adfde9c4eb865}{description\-\_\-}
+\begin{DoxyCompactList}\small\item\em description\-\_\-, la description de la \hyperlink{class_notes_module_1_1_note}{Note} \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_notes_module_1_1_multimedia_af00afad489194bafcbf6c726cce7d496}{path\-\_\-}
+\begin{DoxyCompactList}\small\item\em path\-\_\-, le chemin référençant le fichier \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_notes_module_1_1_multimedia}{Multimedia} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_notes_module_1_1_multimedia_ace5497afd6842429a39316d6568bd9df}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!Multimedia@{Multimedia}}
+\index{Multimedia@{Multimedia}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{Multimedia}]{\setlength{\rightskip}{0pt plus 5cm}Notes\-Module\-::\-Multimedia\-::\-Multimedia (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{id = {\ttfamily 0}, }
+\item[{const Q\-String \&}]{title = {\ttfamily 0}, }
+\item[{const Q\-String \&}]{path = {\ttfamily 0}, }
+\item[{const Q\-String \&}]{description = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_notes_module_1_1_multimedia_ace5497afd6842429a39316d6568bd9df}
+
+
+\hyperlink{class_notes_module_1_1_multimedia}{Multimedia}\-: constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title,\-:} & le titre de la \hyperlink{class_notes_module_1_1_note}{Note} \\
+\hline
+{\em description,\-:} & la description de la \hyperlink{class_notes_module_1_1_note}{Note} \\
+\hline
+{\em path,\-:} & le chemin référençant le fichier \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_notes_module_1_1_multimedia_a1cc0bde00eef2c506b92629a18f2fc9b}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!Multimedia@{Multimedia}}
+\index{Multimedia@{Multimedia}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{Multimedia}]{\setlength{\rightskip}{0pt plus 5cm}Notes\-Module\-::\-Multimedia\-::\-Multimedia (
+\begin{DoxyParamCaption}
+\item[{const {\bf Note} \&}]{n, }
+\item[{const Q\-String \&}]{path = {\ttfamily 0}, }
+\item[{const Q\-String \&}]{description = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_notes_module_1_1_multimedia_a1cc0bde00eef2c506b92629a18f2fc9b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_notes_module_1_1_multimedia_afd58f93d779e3c47226344edbca4b935}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!export\-As\-Part@{export\-As\-Part}}
+\index{export\-As\-Part@{export\-As\-Part}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{export\-As\-Part}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Notes\-Module\-::\-Multimedia\-::export\-As\-Part (
+\begin{DoxyParamCaption}
+\item[{Q\-Text\-Stream \&}]{out, }
+\item[{{\bf T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T}}]{type\-\_\-export, }
+\item[{unsigned int}]{title\-Level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_notes_module_1_1_multimedia_afd58f93d779e3c47226344edbca4b935}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_a71320195744f761430f9efe356c8e55d}{Notes\-Module\-::\-Note}.
+
+
+
+Implemented in \hyperlink{class_notes_module_1_1_image_a7a5cd3af00d351261e7ebd88d462e1f1}{Notes\-Module\-::\-Image}, \hyperlink{class_notes_module_1_1_video_a6bdae63cd7b612f4be54bb04e849249f}{Notes\-Module\-::\-Video}, and \hyperlink{class_notes_module_1_1_audio_a6c0ddeda510f3234c3ad7a955af766a4}{Notes\-Module\-::\-Audio}.
+
+\hypertarget{class_notes_module_1_1_multimedia_a14d7e27fe91172717ed41e572666c4fa}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!exporter@{exporter}}
+\index{exporter@{exporter}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{exporter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Notes\-Module\-::\-Multimedia\-::exporter (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{path\-\_\-export, }
+\item[{{\bf T\-Y\-P\-E\-\_\-\-E\-X\-P\-O\-R\-T}}]{type\-\_\-export}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_notes_module_1_1_multimedia_a14d7e27fe91172717ed41e572666c4fa}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_a6b14ab7f7fc1bb12ead4f8c0ba14a1f7}{Notes\-Module\-::\-Note}.
+
+
+
+Implemented in \hyperlink{class_notes_module_1_1_image_a398d4ec370565280de2c198d5068d221}{Notes\-Module\-::\-Image}, \hyperlink{class_notes_module_1_1_video_afdb8f7924a348fb1d7002038310e9804}{Notes\-Module\-::\-Video}, and \hyperlink{class_notes_module_1_1_audio_aa2e00c1faf2da13f589f6537700f768b}{Notes\-Module\-::\-Audio}.
+
+\hypertarget{class_notes_module_1_1_multimedia_aa93321f835dc4a2128a34ec399f33476}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!get\-Description@{get\-Description}}
+\index{get\-Description@{get\-Description}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{get\-Description}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String \& Multimedia\-::get\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_notes_module_1_1_multimedia_aa93321f835dc4a2128a34ec399f33476}
+
+
+get\-Description\-: obtenir la description de la \hyperlink{class_notes_module_1_1_note}{Note} 
+
+\begin{DoxyReturn}{Returns}
+la description 
+\end{DoxyReturn}
+\hypertarget{class_notes_module_1_1_multimedia_a01591bd65388c073a945c294eec2bb83}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!get\-Extension@{get\-Extension}}
+\index{get\-Extension@{get\-Extension}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{get\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Notes\-Module\-::\-Multimedia\-::get\-Extension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_notes_module_1_1_multimedia_a01591bd65388c073a945c294eec2bb83}
+\hypertarget{class_notes_module_1_1_multimedia_af184859fb26e134660a555d5a502b6b0}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!get\-Path@{get\-Path}}
+\index{get\-Path@{get\-Path}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{get\-Path}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String \& Multimedia\-::get\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_notes_module_1_1_multimedia_af184859fb26e134660a555d5a502b6b0}
+
+
+get\-Path\-: obtenir le chemin référant 
+
+\begin{DoxyReturn}{Returns}
+le chemin 
+\end{DoxyReturn}
+\hypertarget{class_notes_module_1_1_multimedia_a3380989b66a74159e22046490fce1cb7}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\-String Notes\-Module\-::\-Multimedia\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_notes_module_1_1_multimedia_a3380989b66a74159e22046490fce1cb7}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_aabb430fe24e65eda49993d1340583489}{Notes\-Module\-::\-Note}.
+
+
+
+Implemented in \hyperlink{class_notes_module_1_1_image_a88394eb795b5b731cca0695d9a1fc04c}{Notes\-Module\-::\-Image}, \hyperlink{class_notes_module_1_1_video_ab0f28a2be64a8834d8d7ea34227f379c}{Notes\-Module\-::\-Video}, and \hyperlink{class_notes_module_1_1_audio_a1965156d73964bb36e048e4d62ab6896}{Notes\-Module\-::\-Audio}.
+
+\hypertarget{class_notes_module_1_1_multimedia_af567d9c6e680914fccd775c9b3c6d439}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!load@{load}}
+\index{load@{load}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Notes\-Module\-::\-Multimedia\-::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_notes_module_1_1_multimedia_af567d9c6e680914fccd775c9b3c6d439}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_ad1b766b75cc0c201cab42ca0ee175efb}{Notes\-Module\-::\-Note}.
+
+
+
+Implemented in \hyperlink{class_notes_module_1_1_image_a183b754c660df8caed9088e9915606db}{Notes\-Module\-::\-Image}, \hyperlink{class_notes_module_1_1_video_aa319bd3b10ff52792b504f501d92a002}{Notes\-Module\-::\-Video}, and \hyperlink{class_notes_module_1_1_audio_a2f65a901b55b2a1a00e49ace39fc6761}{Notes\-Module\-::\-Audio}.
+
+\hypertarget{class_notes_module_1_1_multimedia_a43df5a7e5a7c8dbc6fd7ca9c39bb6623}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!rewrite\-\_\-in\-\_\-trash@{rewrite\-\_\-in\-\_\-trash}}
+\index{rewrite\-\_\-in\-\_\-trash@{rewrite\-\_\-in\-\_\-trash}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{rewrite\-\_\-in\-\_\-trash}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Notes\-Module\-::\-Multimedia\-::rewrite\-\_\-in\-\_\-trash (
+\begin{DoxyParamCaption}
+\item[{Q\-Text\-Stream \&}]{out}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_notes_module_1_1_multimedia_a43df5a7e5a7c8dbc6fd7ca9c39bb6623}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_a6ec4ccea385dd368fb7c50f52de470d7}{Notes\-Module\-::\-Note}.
+
+
+
+Implemented in \hyperlink{class_notes_module_1_1_image_abb7c1a2808ec0e39898febbce2a617bb}{Notes\-Module\-::\-Image}, \hyperlink{class_notes_module_1_1_video_a89aecb4a316f47f9228fb59b5e21f887}{Notes\-Module\-::\-Video}, and \hyperlink{class_notes_module_1_1_audio_a2a09d27cb51e70f78e36f4aaf08a3029}{Notes\-Module\-::\-Audio}.
+
+\hypertarget{class_notes_module_1_1_multimedia_a06a7716c7b09908813ceb3cd79ab81cb}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!save@{save}}
+\index{save@{save}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Notes\-Module\-::\-Multimedia\-::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_notes_module_1_1_multimedia_a06a7716c7b09908813ceb3cd79ab81cb}
+
+
+Implements \hyperlink{class_notes_module_1_1_note_aafaae92e7b543c5936dccc9b3f05bac0}{Notes\-Module\-::\-Note}.
+
+
+
+Implemented in \hyperlink{class_notes_module_1_1_image_a643d9f46961e8372b6a573246aad66d1}{Notes\-Module\-::\-Image}, \hyperlink{class_notes_module_1_1_video_a7c6a56fd69e2f5b9eec107ff9005bfb5}{Notes\-Module\-::\-Video}, and \hyperlink{class_notes_module_1_1_audio_a0555ff1d4cba12ea17b7a76465682367}{Notes\-Module\-::\-Audio}.
+
+\hypertarget{class_notes_module_1_1_multimedia_a37734d02d1de1b2d8013477f3abe63ee}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!set\-Description@{set\-Description}}
+\index{set\-Description@{set\-Description}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{set\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void Multimedia\-::set\-Description (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{class_notes_module_1_1_multimedia_a37734d02d1de1b2d8013477f3abe63ee}
+
+
+set\-Description\-: affecter une nouvelle description � la \hyperlink{class_notes_module_1_1_note}{Note} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d,\-:} & la description de la \hyperlink{class_notes_module_1_1_note}{Note}\\
+\hline
+\end{DoxyParams}
+C\-L\-A\-S\-S\-E M\-U\-L\-T\-I\-M\-E\-D\-I\-A 
+\begin{DoxyParams}{Parameters}
+{\em d,\-:} & la description de la \hyperlink{class_notes_module_1_1_note}{Note} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_notes_module_1_1_multimedia_ab3ff034d77ecae83ce4502b66e960ddc}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!set\-Path@{set\-Path}}
+\index{set\-Path@{set\-Path}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{set\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Multimedia\-::set\-Path (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_notes_module_1_1_multimedia_ab3ff034d77ecae83ce4502b66e960ddc}
+
+
+set\-Path\-: affecter un nouveau chemin référant 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p,\-:} & le chemin référençant le fichier \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_notes_module_1_1_multimedia_a37df67b92a13a673b96adfde9c4eb865}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!description\-\_\-@{description\-\_\-}}
+\index{description\-\_\-@{description\-\_\-}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{description\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Notes\-Module\-::\-Multimedia\-::description\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_notes_module_1_1_multimedia_a37df67b92a13a673b96adfde9c4eb865}
+
+
+description\-\_\-, la description de la \hyperlink{class_notes_module_1_1_note}{Note} 
+
+\hypertarget{class_notes_module_1_1_multimedia_af00afad489194bafcbf6c726cce7d496}{\index{Notes\-Module\-::\-Multimedia@{Notes\-Module\-::\-Multimedia}!path\-\_\-@{path\-\_\-}}
+\index{path\-\_\-@{path\-\_\-}!NotesModule::Multimedia@{Notes\-Module\-::\-Multimedia}}
+\subsubsection[{path\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Notes\-Module\-::\-Multimedia\-::path\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_notes_module_1_1_multimedia_af00afad489194bafcbf6c726cce7d496}
+
+
+path\-\_\-, le chemin référençant le fichier 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_notes_module_8h}{Notes\-Module.\-h}\item 
+\hyperlink{_notes_module_8cpp}{Notes\-Module.\-cpp}\end{DoxyCompactItemize}
